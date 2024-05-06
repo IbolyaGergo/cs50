@@ -1,0 +1,14 @@
+CREATE TABLE purchases
+(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+user_id INTEGER NOT NULL,
+shares INTEGER NOT NULL,
+symbol TEXT NOT NULL,
+--price NUMERIC,
+--year INTEGER,
+--month INTEGER,
+--day INTEGER,
+--hour INTEGER,
+--minute INTEGER,
+--secund INTEGER,
+dtime DATETIME,
+FOREIGN KEY(user_id) REFERENCES users(id));
